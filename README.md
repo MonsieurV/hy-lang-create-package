@@ -99,4 +99,8 @@ python setup.py sdist bdist_wheel
 twine upload dist/*
 ```
 
+----------------------------------
+
 Enjoy your Hy programming!
+
+Yoan - blog.ytotech.com
