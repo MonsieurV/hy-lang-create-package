@@ -1,17 +1,16 @@
 language: python
 dist: trusty
 python:
-  - '2.7'
-  - '3.5'
-  - '3.6'
-  - 'nightly'
+- '2.7'
+- '3.5'
+- '3.6'
+- nightly
 install:
-    - pip install pipenv
-    - make install-dev
-    - make install-in-venv
+- pip install pipenv
+- make install-dev
+- make install-in-venv
 script:
-    - make test
+- make test
 notifications:
   slack:
-    rooms:
-      secure: CpZNJiI/8E3QnZrcSU7bK8e7yJ538LNggc7iRocMVqgMxANeMUZxCQZx3BwxpU3Bz1H+fOto7BUIZfhA47EQGXQ5BUcJcxqnaMbaL5uARp7n8ffc6cYgGrBuuxtgc6CJaUi6HdHb9n2WLMkrO//cBX6anDI81zZ4cCi5rzcLoc1IlEsj3AJUrUrf7l5HAjv+LCw8IbtXpFxYIdoNGi21l+/PvYEVPRlSTDLVUuKTbRGkLxbByDZZAOFBcugHSwzu1WU9U1B0hVK6NkKTkVjQGMDQ2GxjOxzXeC8bPGAWZ15EfF1oMlwRhjWPGwoTmUmLEJl8JOAfE0PS78KwdmnxFv7wItXjcOhKKkdQkLy4c/g3TWjWVmtYQT8zdpAe9MJ0OJnXerUwinAMYH9QZAzwGLc+7ej1edYzY3Ud0un5xGel5uuvHrsxgW7/d4Q63qlkuFZHExnFxC3V6w2LUVA5TdFzRFDzvRZMMbyfYIP9rML7TvwwAyNp55KKu7O4rz/PLN6iS1cUXtdTxB/RxlwOWageonL4Kc/EBiUdwa3Mh7FDST2mUq9mb/z+2AXEinyzAAn9p48I5Q0UJizsleVZsw5P9Prq1SvomFFznb9T+7SnWjRDW7/qWUS3Sa4z4gED5mqIyRFV14P9BBOaynVdjgEpfii88ZGUHTmAeUod5No=
+    secure: E1c1nT40W2Bc6cfpucMWyrWppFQ2rywp9/nf4UnLjjo6UE6PwFBxMDMuQF6nlRJK2NW0HanZmViHDX13oUP6B03REwmoPV4oBb+GD997F1LdCmz5WVgh1wQwIXM0Zuiwp7XGR0Zt8Rj7oGLpbPSIwwAMW+WkgAHWtfDIj5dHxQpPYoijKzZPVfzWA9aiVjgRNeWoqyJ9pJPTGEnW+q0wOfuCUZxAID2RYdId+1WEuujLlPgUiDW/qoNWeX+Dj5/A5sQJEgFT4DFOO+Rtn81emjse0umnCwxpdB2M0386nuOJQTBK1vKymzoJSF2qrWV0xKybeoz8OzrBPn+RaR7YdetO3WacLqJOo2fJ2qIexRyy/ygyvM3lEjIT4+2oa2wWO5phMHpnCMRhJ3bZ0nWyHIcE/CE2PFzqkmITKuS5ObZF2DQ33qbaHjqIshexa23cNz3W1j1vjE3ZwvBFqEX92iHALiTAOUps214m+8lR+DKMqJF+b4DEvgKz0EJO306mlizDW5D+QGDjBayEpkw+F1VNNPK4qC1H0m6bcaVMdklas+HxoDL9dv05zbB0IR+UDHEJgz46t4X9Yo0KdCU0ndT/eUb8Gdo/JO8ULUB8KTothW/g/dyS0eMMu3DJr4bCFLlz3IsEo7q3x3cv4o4X8c4V/GAGY2UNa+PJLZnvvaM=
