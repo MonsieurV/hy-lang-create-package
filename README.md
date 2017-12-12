@@ -51,7 +51,7 @@ setup(
 )
 ```
 
-# Step 4: tell `setuptools` to include `.hy` files
+## Step 4: tell `setuptools` to include `.hy` files
 
 Finally for your users to call your Hy code, you must ensure it is duly included
 in the final package.
@@ -66,3 +66,37 @@ setup(
 	# ...
 )
 ```
+
+## Final Step: create your package
+
+You're done with the configuration.
+
+You can test your package with:
+```
+python setup.py sdist bdist_wheel
+```
+
+Install it locally (to test it) with:
+```
+# De-install the previous version, if any.
+pip uninstall <your_package_name>
+python setup.py install
+```
+
+Finally when you're happy with it, you can publish it to PyPI:
+```
+# Register your package.
+python setup.py register -r pypi
+# Upload it!
+python setup.py sdist bdist_wheel --universal upload -r pypi
+```
+
+You may also use [twine](https://github.com/pypa/twine) for a more secure and consistent
+upload to PyPI. In this case, do:
+
+```
+python setup.py sdist bdist_wheel
+twine upload dist/*
+```
+
+Enjoy your Hy programming!

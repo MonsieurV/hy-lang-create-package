@@ -15,3 +15,7 @@ test:
 	pipenv run python -m pytest
 	echo "Testing from installed package"
 	pipenv run pytest
+
+publish:
+	pipenv run python setup.py sdist bdist_wheel
+	pipenv run twine upload dist/*

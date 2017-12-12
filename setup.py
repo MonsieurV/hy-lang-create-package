@@ -19,12 +19,13 @@ setup(
 	author_email='yoan@ytotech.com',
 	description='A Hy package that says Hi.',
 	long_description=__doc__,
+	license='MIT',
 	packages=find_packages(exclude=['tests*']),
 	package_data={
 		'hihylang': ['*.hy']
 	},
 	include_package_data=True,
-	zip_safe=True,
+	zip_safe=False,
 	platforms='any',
 	install_requires=[
 		'hy'
