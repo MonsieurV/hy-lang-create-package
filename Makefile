@@ -1,3 +1,6 @@
+install-dev:
+	pipenv install --dev
+
 hello-direct:
 	pipenv run python hello.py
 
@@ -8,5 +11,7 @@ install-in-venv:
 hello-package: install-in-venv test
 
 test:
+	echo "Testing local code from source files"
 	pipenv run python -m pytest
+	echo "Testing from installed package"
 	pipenv run pytest
