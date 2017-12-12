@@ -103,4 +103,4 @@ twine upload dist/*
 
 Enjoy your Hy programming!
 
-Yoan - blog.ytotech.com
+Yoan - https://blog.ytotech.com
