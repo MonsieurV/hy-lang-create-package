@@ -1,6 +1,6 @@
 # How to publish a Python package with Hy code?
 
-[Hy language](https://hylang.org) is great: with it you to code in a Pythonic Lisp dialect and
+[Hy language](https://hylang.org) is great: with it you can code in a Pythonic Lisp dialect - and
 embed that code directly in your Python applications.
 
 No other runtime needed! Just the `hy` package.
