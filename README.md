@@ -78,6 +78,7 @@ setup(
 	zip_safe=False,
 	# ...
 )
+```
 
 ## Final Step: create your package
 
