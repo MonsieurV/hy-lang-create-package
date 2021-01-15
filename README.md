@@ -67,6 +67,18 @@ setup(
 )
 ```
 
+## Step 5: declare the package as not zip-safe
+
+As only [`.py`, `.pyc` and `.pyo` files](https://stackoverflow.com/a/2798535/1956471) can be imported from zip files, we should declare our package as *not* [zip-safe](http://peak.telecommunity.com/DevCenter/setuptools#setting-the-zip-safe-flag).
+
+in `setup.py`:
+```python
+setup(
+	# ...
+	zip_safe=False,
+	# ...
+)
+
 ## Final Step: create your package
 
 You're done with the configuration.
